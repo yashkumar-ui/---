@@ -1,0 +1,69 @@
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-wrapper {
+    margin-top: 3em;
+    height: 400px;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .workout > i {
+    z-index: 3;
+    right: 1em;
+    opacity: 0;
+    transition: ease-in 0.3s;
+    top: 1em;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.25rem;
+  }
+  
+  .overlay {
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .workout-header {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-top: 1em;
+    padding-left: 1.75em;
+    letter-spacing: 2px;
+  }
+  
+  .workout:hover {
+    transition: ease-in 0.5s;
+  }
+  
+  #workout3 {
+    flex: 2;
+  }
+  
+  .workout {
+    transition: ease-out 0.5s;
+    flex: 1;
+    transform-origin: left top;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
